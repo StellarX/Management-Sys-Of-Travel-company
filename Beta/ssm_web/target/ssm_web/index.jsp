@@ -4,6 +4,6 @@
 <html>
 <body>
 <%--<a href="${pageContext.request.contextPath}/product/findAll.do">find all</a>--%>
-<jsp:forward page="/pages/main.jsp"></jsp:forward>
+    <jsp:forward page="/pages/main.jsp"></jsp:forward>
 </body>
 </html>

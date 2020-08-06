@@ -157,7 +157,7 @@
 					数据管理 <small>数据列表</small>
 				</h1>
 				<ol class="breadcrumb">
-					<li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+					<li><a href="${pageContext.request.contextPath}/pages/main.jsp"><i class="fa fa-dashboard"></i> 首页</a></li>
 					<li><a href="#">数据管理</a></li>
 					<li class="active">数据列表</li>
 				</ol>
@@ -348,12 +348,12 @@
 		<!-- 底部导航 -->
 		<footer class="main-footer">
 			<div class="pull-right hidden-xs">
-				<b>Version</b> 1.0.8
+				<b>Version</b> 1.0
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved.
-		</footer>
+			<strong>Copyright &copy; 2020.08.06
+				<a href="https://blog.csdn.net/rakish_wind">rakish_wind 研发</a>.
+				<a href="https://github.com/StellarX/permission-management-sys-of-corporate-/tree/master/Beta">开源代码</a>
+			</strong> All rights reserved. </footer>
 		<!-- 底部导航 /-->
 	</div>
 

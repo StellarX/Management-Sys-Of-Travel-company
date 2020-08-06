@@ -1,10 +1,10 @@
 问题记录
 
-1. db.properties里jdbc.url里不能写192.168.161.10
-2. 执行verify install:install 解决了Maven里红色波浪线
+1. db.properties里jdbc.url里不能写192.168.161.10 1hour
+2. 执行verify install:install 解决了Maven里红色波浪线 1day
 3. 在IDEA中打包Maven项目安装到本地仓库时报错:Failed to execute goal org.apache.maven.plugins:maven-install-plugin:2.4:install (default-cli) on project api: The packaging for this project did not assign a file to the build artifact
-    解决：不要用plugins里的install，而用Lifecycle里的
-
+    解决：不要用plugins里的install，而用Lifecycle里的 1day
+4. 执行添加product时出错，原因：insert语句里语法错误 10min
 环境搭建 不知为什么
 
 
