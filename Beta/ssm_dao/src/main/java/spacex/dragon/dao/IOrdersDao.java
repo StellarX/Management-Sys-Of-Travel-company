@@ -22,7 +22,7 @@ public interface IOrdersDao {
             @Result(property = "product", column = "productId", javaType = Product.class, one = @One(select = "spacex.dragon.dao.IProductDao.findById")),
     })
 
-    public List<Orders> findAll() throws Exception;
+    List<Orders> findAll() throws Exception;
 
     //多表操作
     @Select("select * from orders where id=#{ordersId}")
@@ -39,5 +39,5 @@ public interface IOrdersDao {
             @Result(property = "member",column = "memberId",javaType = Member.class,one = @One(select = "spacex.dragon.dao.IMemberDao.findById")),
             @Result(property = "travellers",column = "id",javaType = List.class,many = @Many(select = "spacex.dragon.dao.ITravellerDao.findByOrdersId"))
     })
-    public Orders findById(String ordersId) throws Exception;
+    Orders findById(String ordersId) throws Exception;
 }
