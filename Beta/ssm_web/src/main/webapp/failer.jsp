@@ -8,9 +8,9 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>数据 - AdminLTE2定制版</title>
-<meta name="description" content="AdminLTE2定制版">
-<meta name="keywords" content="AdminLTE2定制版">
+<title>login failed!</title>
+<meta name="description" content="login failed!">
+<meta name="keywords" content="login failed!">
 
 <!-- Tell the browser to be responsive to screen width -->
 <meta
@@ -271,12 +271,12 @@
 		<!-- 底部导航 -->
 		<footer class="main-footer">
 			<div class="pull-right hidden-xs">
-				<b>Version</b> 1.0.8
+				<b>Version</b> 1.0
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved.
-		</footer>
+			<strong>Copyright &copy; 2020.08.06
+				<a href="https://blog.csdn.net/rakish_wind">rakish_wind 研发</a>.
+				<a href="https://github.com/StellarX/permission-management-sys-of-corporate-/tree/master/Beta">开源代码</a>
+			</strong> All rights reserved. </footer>
 		<!-- 底部导航 /-->
 
 	</div>

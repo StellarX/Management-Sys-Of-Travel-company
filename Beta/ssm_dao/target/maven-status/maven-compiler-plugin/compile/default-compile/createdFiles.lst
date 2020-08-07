@@ -1,4 +1,6 @@
 spacex\dragon\dao\IMemberDao.class
 spacex\dragon\dao\ITravellerDao.class
 spacex\dragon\dao\IOrdersDao.class
+spacex\dragon\dao\IRoleDao.class
 spacex\dragon\dao\IProductDao.class
+spacex\dragon\dao\IUserDao.class

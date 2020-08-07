@@ -1,4 +1,7 @@
 spacex\dragon\domain\Member.class
 spacex\dragon\domain\Product.class
 spacex\dragon\domain\Orders.class
+spacex\dragon\domain\UserInfo.class
+spacex\dragon\domain\Permission.class
+spacex\dragon\domain\Role.class
 spacex\dragon\domain\Traveller.class

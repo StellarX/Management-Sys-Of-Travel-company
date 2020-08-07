@@ -9,7 +9,7 @@ public class UserInfo {
     private String email;
     private String password;
     private String phoneNum;
-    private int status;
+    private int status; //user status: 1 open ; 0 close
     private String statusStr;
     private List<Role> roles;
 

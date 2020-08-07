@@ -32,7 +32,6 @@ public interface IOrdersDao {
             @Result(property = "orderTime", column = "orderTime"),
             @Result(property = "orderStatus", column = "orderStatus"),
             @Result(property = "peopleCount", column = "peopleCount"),
-            @Result(property = "peopleCount", column = "peopleCount"),
             @Result(property = "payType", column = "payType"),
             @Result(property = "orderDesc", column = "orderDesc"),
             @Result(property = "product", column = "productId", javaType = Product.class, one = @One(select = "spacex.dragon.dao.IProductDao.findById")),
