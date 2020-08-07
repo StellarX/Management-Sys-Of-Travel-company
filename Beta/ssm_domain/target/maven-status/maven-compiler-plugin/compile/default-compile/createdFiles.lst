@@ -1,1 +1,4 @@
+spacex\dragon\domain\Member.class
 spacex\dragon\domain\Product.class
+spacex\dragon\domain\Orders.class
+spacex\dragon\domain\Traveller.class
