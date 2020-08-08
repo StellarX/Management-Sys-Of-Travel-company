@@ -1,4 +1,5 @@
 spacex\dragon\controller\RoleController.class
 spacex\dragon\controller\OrdersController.class
 spacex\dragon\controller\UserController.class
+spacex\dragon\controller\PermissionController.class
 spacex\dragon\controller\ProductController.class
