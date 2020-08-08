@@ -1,9 +1,6 @@
 package spacex.dragon.dao;
 
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 import spacex.dragon.domain.Role;
 
 import java.util.List;
@@ -18,4 +15,10 @@ public interface IRoleDao {
             @Result(property = "permissions",column = "id",javaType = java.util.List.class,many = @Many(select = "spacex.dragon.dao.IPermissionDao.findPermissionByRoleId"))
     })
     List<Role> findRoleByUserId(String userId) throws Exception;
+
+    @Select("select * from role")
+    List<Role> findAll() throws Exception;
+
+    @Insert("insert into role(roleName,roleDesc) values(#{roleName},#{roleDesc})")
+    void save(Role role);
 }
