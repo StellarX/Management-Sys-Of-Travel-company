@@ -1,5 +1,8 @@
 package spacex.dragon.dao;
 
+import org.apache.ibatis.annotations.Many;
+import org.apache.ibatis.annotations.Result;
+import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
 import spacex.dragon.domain.Role;
 
@@ -8,5 +11,11 @@ import java.util.List;
 public interface IRoleDao {
 
     @Select("select * from role where id in (select roleId from users_role where userId=#{userId})")
+    @Results({
+            @Result(id = true, property = "id", column = "id"),
+            @Result(property = "roleName", column = "roleName"),
+            @Result(property = "roleDesc", column = "roleDesc"),
+            @Result(property = "permissions",column = "id",javaType = java.util.List.class,many = @Many(select = "spacex.dragon.dao.IPermissionDao.findPermissionByRoleId"))
+    })
     List<Role> findRoleByUserId(String userId) throws Exception;
 }

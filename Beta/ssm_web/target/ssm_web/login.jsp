@@ -27,21 +27,21 @@
 <body class="hold-transition login-page">
 	<div class="login-box">
 		<div class="login-logo">
-			<a href="all-admin-index.html"><b>ITCAST</b>后台管理系统</a>
+			<a href="all-admin-index.html"><b>超空间</b>入口</a>
 		</div>
 		<!-- /.login-logo -->
 		<div class="login-box-body">
-			<p class="login-box-msg">登录系统</p>
+			<p class="login-box-msg">登陆</p>
 
 			<form action="${pageContext.request.contextPath}/login.do" method="post">
 				<div class="form-group has-feedback">
 					<input type="text" name="username" class="form-control"
-						placeholder="用户名"> <span
+						placeholder="你是谁？"> <span
 						class="glyphicon glyphicon-envelope form-control-feedback"></span>
 				</div>
 				<div class="form-group has-feedback">
 					<input type="password" name="password" class="form-control"
-						placeholder="密码"> <span
+						placeholder="输入你的通行证"> <span
 						class="glyphicon glyphicon-lock form-control-feedback"></span>
 				</div>
 				<div class="row">

@@ -1,2 +1,3 @@
 spacex\dragon\controller\OrdersController.class
+spacex\dragon\controller\UserController.class
 spacex\dragon\controller\ProductController.class
