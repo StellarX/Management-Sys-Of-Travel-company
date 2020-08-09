@@ -1,6 +1,7 @@
 package spacex.dragon.dao;
 
 import org.apache.ibatis.annotations.*;
+import spacex.dragon.domain.Role;
 import spacex.dragon.domain.UserInfo;
 
 import java.util.List;
@@ -36,4 +37,11 @@ public interface IUserDao {
             @Result(property = "roles",column = "id",javaType = java.util.List.class,many = @Many(select = "spacex.dragon.dao.IRoleDao.findRoleByUserId"))
     })
     UserInfo findById(String id) throws Exception;
+
+    @Select("select * from role where id not in (select roleId from users_role where userId=#{userId})")
+    List<Role> findOtherRoles(String userId);
+
+    @Insert("insert into users_role(userId,roleId) values(#{userId},#{roleId})")
+    void addRoleToUser(@Param("userId") String userId, @Param("roleId") String roleId);
+    //当有多个不同对象时，需要加@Param指定名称
 }
