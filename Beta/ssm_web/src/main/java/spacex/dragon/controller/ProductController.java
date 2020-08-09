@@ -7,6 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 import spacex.dragon.domain.Product;
 import spacex.dragon.service.IProductService;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.List;
 
 @Controller
@@ -24,6 +25,7 @@ public class ProductController {
     }
 
     @RequestMapping("/findAll.do")
+    @RolesAllowed("监听员")
     public ModelAndView findAll() throws Exception {
         ModelAndView mv = new ModelAndView();
         List<Product> ps = productService.findAll();
