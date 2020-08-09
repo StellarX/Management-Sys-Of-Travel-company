@@ -1,10 +1,12 @@
 spacex\dragon\service\impl\RoleServiceImpl.class
 spacex\dragon\service\IOrdersService.class
 spacex\dragon\service\IRoleService.class
+spacex\dragon\service\impl\SysLogServiceImpl.class
 spacex\dragon\service\IPermissionService.class
 spacex\dragon\service\impl\OrdersServiceImpl.class
 spacex\dragon\service\IProductService.class
 spacex\dragon\service\impl\ProductServiceImpl.class
 spacex\dragon\service\impl\UserServiceImpl.class
 spacex\dragon\service\impl\PermissionServiceImpl.class
+spacex\dragon\service\ISysLogService.class
 spacex\dragon\service\IUserService.class

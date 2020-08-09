@@ -17,5 +17,7 @@
     - debug time：15min
 8. 用户登陆验证时，IRoleDao中的findRoleByUserId写成了findRoleById
     - debug time：1h30min
+9. 日志信息没有存储到数据库，重新clean、install 2次后，才好了
+    - debug time：20min
 
 

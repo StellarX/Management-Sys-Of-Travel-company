@@ -1,3 +1,5 @@
+spacex\dragon\controller\LogAop.class
+spacex\dragon\controller\SysLogController.class
 spacex\dragon\controller\RoleController.class
 spacex\dragon\controller\OrdersController.class
 spacex\dragon\controller\UserController.class

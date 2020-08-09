@@ -1,6 +1,8 @@
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\impl\RoleServiceImpl.java
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\impl\OrdersServiceImpl.java
+I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\impl\SysLogServiceImpl.java
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\IRoleService.java
+I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\ISysLogService.java
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\IPermissionService.java
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\IProductService.java
 I:\SSM\Beta\ssm_service\src\main\java\spacex\dragon\service\IUserService.java

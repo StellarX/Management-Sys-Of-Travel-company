@@ -5,3 +5,4 @@ spacex\dragon\domain\UserInfo.class
 spacex\dragon\domain\Permission.class
 spacex\dragon\domain\Role.class
 spacex\dragon\domain\Traveller.class
+spacex\dragon\domain\SysLog.class
