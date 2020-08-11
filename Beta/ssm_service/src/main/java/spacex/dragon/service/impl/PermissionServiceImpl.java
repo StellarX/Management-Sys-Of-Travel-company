@@ -1,5 +1,6 @@
 package spacex.dragon.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import spacex.dragon.dao.IPermissionDao;
@@ -19,7 +20,9 @@ public class PermissionServiceImpl implements IPermissionService {
     }
 
     @Override
-    public List<Permission> findAll() throws Exception{
+    public List<Permission> findAll(int page, int size) throws Exception{
+        //参数pageNum 是页码值   参数pageSize 代表是每页显示条数
+        PageHelper.startPage(page, size);
         return permissionDao.findAll();
     }
 }

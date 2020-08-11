@@ -35,23 +35,26 @@
 					<li id="system-setting">
 						<security:authorize access="hasRole('admin')">
 							<%-- only admin can see this option		--%>
-							<a href="${pageContext.request.contextPath}/user/findAll.do"> <i
+							<a href="${pageContext.request.contextPath}/user/findAll.do?page=1&size=4"> <i
 								class="fa fa-circle-o"></i> 用户管理
 							</a>
 						</security:authorize>
 					</li>
 					<li id="system-setting"><a
-						href="${pageContext.request.contextPath}/role/findAll.do"> <i
+						href="${pageContext.request.contextPath}/role/findAll.do?page=1&size=4"> <i
 							class="fa fa-circle-o"></i> 角色管理
 					</a></li>
 					<li id="system-setting"><a
-						href="${pageContext.request.contextPath}/permission/findAll.do">
+						href="${pageContext.request.contextPath}/permission/findAll.do?page=1&size=4">
 							<i class="fa fa-circle-o"></i> 资源权限管理
 					</a></li>
-					<li id="system-setting"><a
-						href="${pageContext.request.contextPath}/sysLog/findAll.do"> <i
+					<li id="system-setting">
+						<security:authorize access="hasRole('admin')">
+						<a href="${pageContext.request.contextPath}/sysLog/findAll.do?page=1&size=4"> <i
 							class="fa fa-circle-o"></i> 访问日志
-					</a></li>
+						</a>
+						</security:authorize>
+					</li>
 				</ul></li>
 			<li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
 					<span>基础数据</span> <span class="pull-right-container"> <i
@@ -61,7 +64,7 @@
 				<ul class="treeview-menu">
 
 					<li id="system-setting"><a
-						href="${pageContext.request.contextPath}/product/findAll.do">
+						href="${pageContext.request.contextPath}/product/findAll.do?page=1&size=4">
 							<i class="fa fa-circle-o"></i> 产品管理
 					</a></li>
 					<li id="system-setting"><a

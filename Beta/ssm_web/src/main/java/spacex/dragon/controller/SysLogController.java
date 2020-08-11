@@ -1,7 +1,9 @@
 package spacex.dragon.controller;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import spacex.dragon.domain.SysLog;
 import spacex.dragon.service.ISysLogService;
@@ -15,11 +17,22 @@ public class SysLogController {
     @Autowired
     private ISysLogService sysLogService;
 
+//    @RequestMapping("/findAll.do")
+//    public ModelAndView findAll() throws Exception {
+//        ModelAndView mv=new ModelAndView();
+//        List<SysLog> sysLogList= sysLogService.findAll();
+//        mv.addObject("sysLogs",sysLogList);
+//        mv.setViewName("syslog-list");
+//        return mv;
+//    }
+
+    //add paging function
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll() throws Exception {
+    public ModelAndView findAll(@RequestParam(name="page", required = true, defaultValue = "1") Integer page, @RequestParam(name="size", required = true, defaultValue = "4") Integer size) throws Exception {
         ModelAndView mv=new ModelAndView();
-        List<SysLog> sysLogList= sysLogService.findAll();
-        mv.addObject("sysLogs",sysLogList);
+        List<SysLog> sysLogList= sysLogService.findAll(page, size);
+        PageInfo pageInfo = new PageInfo(sysLogList);
+        mv.addObject("pageInfo",pageInfo);
         mv.setViewName("syslog-list");
         return mv;
     }
